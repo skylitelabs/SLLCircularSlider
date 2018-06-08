@@ -7,28 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2638776D1857686D00069D17 /* EFCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2638776C1857686D00069D17 /* EFCircularSlider.m */; };
+		2638776D1857686D00069D17 /* SLLCircularSlider.m in Sources */ = {isa = PBXBuildFile; fileRef = 2638776C1857686D00069D17 /* SLLCircularSlider.m */; };
 		73AA222A184F85BF0019641B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AA2229184F85BF0019641B /* Foundation.framework */; };
 		73AA222C184F85BF0019641B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AA222B184F85BF0019641B /* CoreGraphics.framework */; };
 		73AA222E184F85BF0019641B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AA222D184F85BF0019641B /* UIKit.framework */; };
 		73AA2234184F85BF0019641B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73AA2232184F85BF0019641B /* InfoPlist.strings */; };
 		73AA2236184F85BF0019641B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2235184F85BF0019641B /* main.m */; };
-		73AA223A184F85BF0019641B /* EFAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2239184F85BF0019641B /* EFAppDelegate.m */; };
+		73AA223A184F85BF0019641B /* SLLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2239184F85BF0019641B /* SLLAppDelegate.m */; };
 		73AA223D184F85BF0019641B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 73AA223B184F85BF0019641B /* Main.storyboard */; };
-		73AA2240184F85BF0019641B /* EFBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA223F184F85BF0019641B /* EFBasicViewController.m */; };
+		73AA2240184F85BF0019641B /* SLLBasicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA223F184F85BF0019641B /* SLLBasicViewController.m */; };
 		73AA2242184F85BF0019641B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 73AA2241184F85BF0019641B /* Images.xcassets */; };
 		73AA2249184F85BF0019641B /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AA2248184F85BF0019641B /* XCTest.framework */; };
 		73AA224A184F85BF0019641B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AA2229184F85BF0019641B /* Foundation.framework */; };
 		73AA224B184F85BF0019641B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 73AA222D184F85BF0019641B /* UIKit.framework */; };
 		73AA2253184F85BF0019641B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 73AA2251184F85BF0019641B /* InfoPlist.strings */; };
-		73AA2255184F85BF0019641B /* EFCircularSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2254184F85BF0019641B /* EFCircularSliderTests.m */; };
-		73AA22731850F3720019641B /* EFDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA22721850F3720019641B /* EFDemoListViewController.m */; };
-		73AA2276185100B70019641B /* EFBigCircleHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2275185100B70019641B /* EFBigCircleHandleViewController.m */; };
-		73AA2279185101F60019641B /* EFDoubleCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2278185101F60019641B /* EFDoubleCircleViewController.m */; };
-		73AA227C185102560019641B /* EFWithLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA227B185102560019641B /* EFWithLabelsViewController.m */; };
-		73AA227F1851030B0019641B /* EFSnapToLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA227E1851030B0019641B /* EFSnapToLabelsViewController.m */; };
-		73AA2282185103BC0019641B /* EFTimePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2281185103BC0019641B /* EFTimePickerViewController.m */; };
-		9F44EB0418DC32FD00CA0945 /* EFBigLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44EB0318DC32FD00CA0945 /* EFBigLineViewController.m */; };
+		73AA2255184F85BF0019641B /* SLLCircularSliderTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2254184F85BF0019641B /* SLLCircularSliderTests.m */; };
+		73AA22731850F3720019641B /* SLLDemoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA22721850F3720019641B /* SLLDemoListViewController.m */; };
+		73AA2276185100B70019641B /* SLLBigCircleHandleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2275185100B70019641B /* SLLBigCircleHandleViewController.m */; };
+		73AA2279185101F60019641B /* SLLDoubleCircleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2278185101F60019641B /* SLLDoubleCircleViewController.m */; };
+		73AA227C185102560019641B /* SLLWithLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA227B185102560019641B /* SLLWithLabelsViewController.m */; };
+		73AA227F1851030B0019641B /* SLLSnapToLabelsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA227E1851030B0019641B /* SLLSnapToLabelsViewController.m */; };
+		73AA2282185103BC0019641B /* SLLTimePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 73AA2281185103BC0019641B /* SLLTimePickerViewController.m */; };
+		9F44EB0418DC32FD00CA0945 /* SLLBigLineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9F44EB0318DC32FD00CA0945 /* SLLBigLineViewController.m */; };
 		9F44EB0618DC365400CA0945 /* label_position.png in Resources */ = {isa = PBXBuildFile; fileRef = 9F44EB0518DC365400CA0945 /* label_position.png */; };
 /* End PBXBuildFile section */
 
@@ -43,41 +43,41 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		2638776B1857686D00069D17 /* EFCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFCircularSlider.h; sourceTree = "<group>"; };
-		2638776C1857686D00069D17 /* EFCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFCircularSlider.m; sourceTree = "<group>"; };
-		73AA2226184F85BF0019641B /* EFCircularSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EFCircularSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2638776B1857686D00069D17 /* SLLCircularSlider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLCircularSlider.h; sourceTree = "<group>"; };
+		2638776C1857686D00069D17 /* SLLCircularSlider.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLCircularSlider.m; sourceTree = "<group>"; };
+		73AA2226184F85BF0019641B /* SLLCircularSlider.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SLLCircularSlider.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AA2229184F85BF0019641B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		73AA222B184F85BF0019641B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		73AA222D184F85BF0019641B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		73AA2231184F85BF0019641B /* EFCircularSlider-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EFCircularSlider-Info.plist"; sourceTree = "<group>"; };
+		73AA2231184F85BF0019641B /* SLLCircularSlider-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLLCircularSlider-Info.plist"; sourceTree = "<group>"; };
 		73AA2233184F85BF0019641B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		73AA2235184F85BF0019641B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		73AA2237184F85BF0019641B /* EFCircularSlider-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EFCircularSlider-Prefix.pch"; sourceTree = "<group>"; };
-		73AA2238184F85BF0019641B /* EFAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFAppDelegate.h; sourceTree = "<group>"; };
-		73AA2239184F85BF0019641B /* EFAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFAppDelegate.m; sourceTree = "<group>"; };
+		73AA2237184F85BF0019641B /* SLLCircularSlider-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SLLCircularSlider-Prefix.pch"; sourceTree = "<group>"; };
+		73AA2238184F85BF0019641B /* SLLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLLAppDelegate.h; sourceTree = "<group>"; };
+		73AA2239184F85BF0019641B /* SLLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLLAppDelegate.m; sourceTree = "<group>"; };
 		73AA223C184F85BF0019641B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		73AA223E184F85BF0019641B /* EFBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = EFBasicViewController.h; sourceTree = "<group>"; };
-		73AA223F184F85BF0019641B /* EFBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFBasicViewController.m; sourceTree = "<group>"; };
+		73AA223E184F85BF0019641B /* SLLBasicViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SLLBasicViewController.h; sourceTree = "<group>"; };
+		73AA223F184F85BF0019641B /* SLLBasicViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLLBasicViewController.m; sourceTree = "<group>"; };
 		73AA2241184F85BF0019641B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		73AA2247184F85BF0019641B /* EFCircularSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EFCircularSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		73AA2247184F85BF0019641B /* SLLCircularSliderTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SLLCircularSliderTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		73AA2248184F85BF0019641B /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		73AA2250184F85BF0019641B /* EFCircularSliderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "EFCircularSliderTests-Info.plist"; sourceTree = "<group>"; };
+		73AA2250184F85BF0019641B /* SLLCircularSliderTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SLLCircularSliderTests-Info.plist"; sourceTree = "<group>"; };
 		73AA2252184F85BF0019641B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		73AA2254184F85BF0019641B /* EFCircularSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = EFCircularSliderTests.m; sourceTree = "<group>"; };
-		73AA22711850F3720019641B /* EFDemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFDemoListViewController.h; sourceTree = "<group>"; };
-		73AA22721850F3720019641B /* EFDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFDemoListViewController.m; sourceTree = "<group>"; };
-		73AA2274185100B70019641B /* EFBigCircleHandleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBigCircleHandleViewController.h; sourceTree = "<group>"; };
-		73AA2275185100B70019641B /* EFBigCircleHandleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBigCircleHandleViewController.m; sourceTree = "<group>"; };
-		73AA2277185101F60019641B /* EFDoubleCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFDoubleCircleViewController.h; sourceTree = "<group>"; };
-		73AA2278185101F60019641B /* EFDoubleCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFDoubleCircleViewController.m; sourceTree = "<group>"; };
-		73AA227A185102560019641B /* EFWithLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFWithLabelsViewController.h; sourceTree = "<group>"; };
-		73AA227B185102560019641B /* EFWithLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFWithLabelsViewController.m; sourceTree = "<group>"; };
-		73AA227D1851030B0019641B /* EFSnapToLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFSnapToLabelsViewController.h; sourceTree = "<group>"; };
-		73AA227E1851030B0019641B /* EFSnapToLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFSnapToLabelsViewController.m; sourceTree = "<group>"; };
-		73AA2280185103BC0019641B /* EFTimePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFTimePickerViewController.h; sourceTree = "<group>"; };
-		73AA2281185103BC0019641B /* EFTimePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFTimePickerViewController.m; sourceTree = "<group>"; };
-		9F44EB0218DC32FD00CA0945 /* EFBigLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EFBigLineViewController.h; sourceTree = "<group>"; };
-		9F44EB0318DC32FD00CA0945 /* EFBigLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EFBigLineViewController.m; sourceTree = "<group>"; };
+		73AA2254184F85BF0019641B /* SLLCircularSliderTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SLLCircularSliderTests.m; sourceTree = "<group>"; };
+		73AA22711850F3720019641B /* SLLDemoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLDemoListViewController.h; sourceTree = "<group>"; };
+		73AA22721850F3720019641B /* SLLDemoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLDemoListViewController.m; sourceTree = "<group>"; };
+		73AA2274185100B70019641B /* SLLBigCircleHandleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLBigCircleHandleViewController.h; sourceTree = "<group>"; };
+		73AA2275185100B70019641B /* SLLBigCircleHandleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLBigCircleHandleViewController.m; sourceTree = "<group>"; };
+		73AA2277185101F60019641B /* SLLDoubleCircleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLDoubleCircleViewController.h; sourceTree = "<group>"; };
+		73AA2278185101F60019641B /* SLLDoubleCircleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLDoubleCircleViewController.m; sourceTree = "<group>"; };
+		73AA227A185102560019641B /* SLLWithLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLWithLabelsViewController.h; sourceTree = "<group>"; };
+		73AA227B185102560019641B /* SLLWithLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLWithLabelsViewController.m; sourceTree = "<group>"; };
+		73AA227D1851030B0019641B /* SLLSnapToLabelsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLSnapToLabelsViewController.h; sourceTree = "<group>"; };
+		73AA227E1851030B0019641B /* SLLSnapToLabelsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLSnapToLabelsViewController.m; sourceTree = "<group>"; };
+		73AA2280185103BC0019641B /* SLLTimePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLTimePickerViewController.h; sourceTree = "<group>"; };
+		73AA2281185103BC0019641B /* SLLTimePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLTimePickerViewController.m; sourceTree = "<group>"; };
+		9F44EB0218DC32FD00CA0945 /* SLLBigLineViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SLLBigLineViewController.h; sourceTree = "<group>"; };
+		9F44EB0318DC32FD00CA0945 /* SLLBigLineViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SLLBigLineViewController.m; sourceTree = "<group>"; };
 		9F44EB0518DC365400CA0945 /* label_position.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = label_position.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -105,21 +105,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		2638776A1857686D00069D17 /* EFCircularSlider */ = {
+		2638776A1857686D00069D17 /* SLLCircularSlider */ = {
 			isa = PBXGroup;
 			children = (
-				2638776B1857686D00069D17 /* EFCircularSlider.h */,
-				2638776C1857686D00069D17 /* EFCircularSlider.m */,
+				2638776B1857686D00069D17 /* SLLCircularSlider.h */,
+				2638776C1857686D00069D17 /* SLLCircularSlider.m */,
 			);
-			name = EFCircularSlider;
-			path = ../../EFCircularSlider;
+			name = SLLCircularSlider;
+			path = ../../SLLCircularSlider;
 			sourceTree = "<group>";
 		};
 		73AA221D184F85BF0019641B = {
 			isa = PBXGroup;
 			children = (
-				73AA222F184F85BF0019641B /* EFCircularSlider */,
-				73AA224E184F85BF0019641B /* EFCircularSliderTests */,
+				73AA222F184F85BF0019641B /* SLLCircularSlider */,
+				73AA224E184F85BF0019641B /* SLLCircularSliderTests */,
 				73AA2228184F85BF0019641B /* Frameworks */,
 				73AA2227184F85BF0019641B /* Products */,
 			);
@@ -128,8 +128,8 @@
 		73AA2227184F85BF0019641B /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				73AA2226184F85BF0019641B /* EFCircularSlider.app */,
-				73AA2247184F85BF0019641B /* EFCircularSliderTests.xctest */,
+				73AA2226184F85BF0019641B /* SLLCircularSlider.app */,
+				73AA2247184F85BF0019641B /* SLLCircularSliderTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -145,45 +145,45 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		73AA222F184F85BF0019641B /* EFCircularSlider */ = {
+		73AA222F184F85BF0019641B /* SLLCircularSlider */ = {
 			isa = PBXGroup;
 			children = (
-				2638776A1857686D00069D17 /* EFCircularSlider */,
+				2638776A1857686D00069D17 /* SLLCircularSlider */,
 				73AA223B184F85BF0019641B /* Main.storyboard */,
 				73AA2241184F85BF0019641B /* Images.xcassets */,
 				9F44EB0518DC365400CA0945 /* label_position.png */,
 				73AA22701850F3340019641B /* ViewControllers */,
 				73AA2230184F85BF0019641B /* Supporting Files */,
 			);
-			path = EFCircularSlider;
+			path = SLLCircularSlider;
 			sourceTree = "<group>";
 		};
 		73AA2230184F85BF0019641B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				73AA2238184F85BF0019641B /* EFAppDelegate.h */,
-				73AA2239184F85BF0019641B /* EFAppDelegate.m */,
-				73AA2231184F85BF0019641B /* EFCircularSlider-Info.plist */,
+				73AA2238184F85BF0019641B /* SLLAppDelegate.h */,
+				73AA2239184F85BF0019641B /* SLLAppDelegate.m */,
+				73AA2231184F85BF0019641B /* SLLCircularSlider-Info.plist */,
 				73AA2232184F85BF0019641B /* InfoPlist.strings */,
 				73AA2235184F85BF0019641B /* main.m */,
-				73AA2237184F85BF0019641B /* EFCircularSlider-Prefix.pch */,
+				73AA2237184F85BF0019641B /* SLLCircularSlider-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		73AA224E184F85BF0019641B /* EFCircularSliderTests */ = {
+		73AA224E184F85BF0019641B /* SLLCircularSliderTests */ = {
 			isa = PBXGroup;
 			children = (
-				73AA2254184F85BF0019641B /* EFCircularSliderTests.m */,
+				73AA2254184F85BF0019641B /* SLLCircularSliderTests.m */,
 				73AA224F184F85BF0019641B /* Supporting Files */,
 			);
-			path = EFCircularSliderTests;
+			path = SLLCircularSliderTests;
 			sourceTree = "<group>";
 		};
 		73AA224F184F85BF0019641B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				73AA2250184F85BF0019641B /* EFCircularSliderTests-Info.plist */,
+				73AA2250184F85BF0019641B /* SLLCircularSliderTests-Info.plist */,
 				73AA2251184F85BF0019641B /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
@@ -192,22 +192,22 @@
 		73AA22701850F3340019641B /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				73AA223E184F85BF0019641B /* EFBasicViewController.h */,
-				73AA223F184F85BF0019641B /* EFBasicViewController.m */,
-				73AA2274185100B70019641B /* EFBigCircleHandleViewController.h */,
-				73AA2275185100B70019641B /* EFBigCircleHandleViewController.m */,
-				73AA22711850F3720019641B /* EFDemoListViewController.h */,
-				73AA22721850F3720019641B /* EFDemoListViewController.m */,
-				73AA2277185101F60019641B /* EFDoubleCircleViewController.h */,
-				73AA2278185101F60019641B /* EFDoubleCircleViewController.m */,
-				73AA227A185102560019641B /* EFWithLabelsViewController.h */,
-				73AA227B185102560019641B /* EFWithLabelsViewController.m */,
-				9F44EB0218DC32FD00CA0945 /* EFBigLineViewController.h */,
-				9F44EB0318DC32FD00CA0945 /* EFBigLineViewController.m */,
-				73AA227D1851030B0019641B /* EFSnapToLabelsViewController.h */,
-				73AA227E1851030B0019641B /* EFSnapToLabelsViewController.m */,
-				73AA2280185103BC0019641B /* EFTimePickerViewController.h */,
-				73AA2281185103BC0019641B /* EFTimePickerViewController.m */,
+				73AA223E184F85BF0019641B /* SLLBasicViewController.h */,
+				73AA223F184F85BF0019641B /* SLLBasicViewController.m */,
+				73AA2274185100B70019641B /* SLLBigCircleHandleViewController.h */,
+				73AA2275185100B70019641B /* SLLBigCircleHandleViewController.m */,
+				73AA22711850F3720019641B /* SLLDemoListViewController.h */,
+				73AA22721850F3720019641B /* SLLDemoListViewController.m */,
+				73AA2277185101F60019641B /* SLLDoubleCircleViewController.h */,
+				73AA2278185101F60019641B /* SLLDoubleCircleViewController.m */,
+				73AA227A185102560019641B /* SLLWithLabelsViewController.h */,
+				73AA227B185102560019641B /* SLLWithLabelsViewController.m */,
+				9F44EB0218DC32FD00CA0945 /* SLLBigLineViewController.h */,
+				9F44EB0318DC32FD00CA0945 /* SLLBigLineViewController.m */,
+				73AA227D1851030B0019641B /* SLLSnapToLabelsViewController.h */,
+				73AA227E1851030B0019641B /* SLLSnapToLabelsViewController.m */,
+				73AA2280185103BC0019641B /* SLLTimePickerViewController.h */,
+				73AA2281185103BC0019641B /* SLLTimePickerViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -215,9 +215,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		73AA2225184F85BF0019641B /* EFCircularSlider */ = {
+		73AA2225184F85BF0019641B /* SLLCircularSlider */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73AA2258184F85BF0019641B /* Build configuration list for PBXNativeTarget "EFCircularSlider" */;
+			buildConfigurationList = 73AA2258184F85BF0019641B /* Build configuration list for PBXNativeTarget "SLLCircularSlider" */;
 			buildPhases = (
 				73AA2222184F85BF0019641B /* Sources */,
 				73AA2223184F85BF0019641B /* Frameworks */,
@@ -227,14 +227,14 @@
 			);
 			dependencies = (
 			);
-			name = EFCircularSlider;
+			name = SLLCircularSlider;
 			productName = EFCircularSlider;
-			productReference = 73AA2226184F85BF0019641B /* EFCircularSlider.app */;
+			productReference = 73AA2226184F85BF0019641B /* SLLCircularSlider.app */;
 			productType = "com.apple.product-type.application";
 		};
-		73AA2246184F85BF0019641B /* EFCircularSliderTests */ = {
+		73AA2246184F85BF0019641B /* SLLCircularSliderTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 73AA225B184F85BF0019641B /* Build configuration list for PBXNativeTarget "EFCircularSliderTests" */;
+			buildConfigurationList = 73AA225B184F85BF0019641B /* Build configuration list for PBXNativeTarget "SLLCircularSliderTests" */;
 			buildPhases = (
 				73AA2243184F85BF0019641B /* Sources */,
 				73AA2244184F85BF0019641B /* Frameworks */,
@@ -245,9 +245,9 @@
 			dependencies = (
 				73AA224D184F85BF0019641B /* PBXTargetDependency */,
 			);
-			name = EFCircularSliderTests;
+			name = SLLCircularSliderTests;
 			productName = EFCircularSliderTests;
-			productReference = 73AA2247184F85BF0019641B /* EFCircularSliderTests.xctest */;
+			productReference = 73AA2247184F85BF0019641B /* SLLCircularSliderTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
@@ -256,9 +256,9 @@
 		73AA221E184F85BF0019641B /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				CLASSPREFIX = EF;
+				CLASSPREFIX = SLL;
 				LastUpgradeCheck = 0500;
-				ORGANIZATIONNAME = "Eliot Fowler";
+				ORGANIZATIONNAME = "Skylite Labs";
 				TargetAttributes = {
 					73AA2225184F85BF0019641B = {
 						DevelopmentTeam = 99RZ6CD595;
@@ -268,7 +268,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 73AA2221184F85BF0019641B /* Build configuration list for PBXProject "EFCircularSlider" */;
+			buildConfigurationList = 73AA2221184F85BF0019641B /* Build configuration list for PBXProject "SLLCircularSlider" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -281,8 +281,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				73AA2225184F85BF0019641B /* EFCircularSlider */,
-				73AA2246184F85BF0019641B /* EFCircularSliderTests */,
+				73AA2225184F85BF0019641B /* SLLCircularSlider */,
+				73AA2246184F85BF0019641B /* SLLCircularSliderTests */,
 			);
 		};
 /* End PBXProject section */
@@ -314,17 +314,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73AA227C185102560019641B /* EFWithLabelsViewController.m in Sources */,
-				73AA2276185100B70019641B /* EFBigCircleHandleViewController.m in Sources */,
-				73AA2282185103BC0019641B /* EFTimePickerViewController.m in Sources */,
-				73AA227F1851030B0019641B /* EFSnapToLabelsViewController.m in Sources */,
-				9F44EB0418DC32FD00CA0945 /* EFBigLineViewController.m in Sources */,
-				73AA2279185101F60019641B /* EFDoubleCircleViewController.m in Sources */,
-				73AA2240184F85BF0019641B /* EFBasicViewController.m in Sources */,
+				73AA227C185102560019641B /* SLLWithLabelsViewController.m in Sources */,
+				73AA2276185100B70019641B /* SLLBigCircleHandleViewController.m in Sources */,
+				73AA2282185103BC0019641B /* SLLTimePickerViewController.m in Sources */,
+				73AA227F1851030B0019641B /* SLLSnapToLabelsViewController.m in Sources */,
+				9F44EB0418DC32FD00CA0945 /* SLLBigLineViewController.m in Sources */,
+				73AA2279185101F60019641B /* SLLDoubleCircleViewController.m in Sources */,
+				73AA2240184F85BF0019641B /* SLLBasicViewController.m in Sources */,
 				73AA2236184F85BF0019641B /* main.m in Sources */,
-				73AA22731850F3720019641B /* EFDemoListViewController.m in Sources */,
-				2638776D1857686D00069D17 /* EFCircularSlider.m in Sources */,
-				73AA223A184F85BF0019641B /* EFAppDelegate.m in Sources */,
+				73AA22731850F3720019641B /* SLLDemoListViewController.m in Sources */,
+				2638776D1857686D00069D17 /* SLLCircularSlider.m in Sources */,
+				73AA223A184F85BF0019641B /* SLLAppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -332,7 +332,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				73AA2255184F85BF0019641B /* EFCircularSliderTests.m in Sources */,
+				73AA2255184F85BF0019641B /* SLLCircularSliderTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -341,7 +341,7 @@
 /* Begin PBXTargetDependency section */
 		73AA224D184F85BF0019641B /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 73AA2225184F85BF0019641B /* EFCircularSlider */;
+			target = 73AA2225184F85BF0019641B /* SLLCircularSlider */;
 			targetProxy = 73AA224C184F85BF0019641B /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
@@ -453,8 +453,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EFCircularSlider/EFCircularSlider-Prefix.pch";
-				INFOPLIST_FILE = "EFCircularSlider/EFCircularSlider-Info.plist";
+				GCC_PREFIX_HEADER = "EFCircularSlider/SLLCircularSlider-Prefix.pch";
+				INFOPLIST_FILE = "EFCircularSlider/SLLCircularSlider-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -467,8 +467,8 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "EFCircularSlider/EFCircularSlider-Prefix.pch";
-				INFOPLIST_FILE = "EFCircularSlider/EFCircularSlider-Info.plist";
+				GCC_PREFIX_HEADER = "EFCircularSlider/SLLCircularSlider-Prefix.pch";
+				INFOPLIST_FILE = "EFCircularSlider/SLLCircularSlider-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -490,7 +490,7 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				INFOPLIST_FILE = "EFCircularSliderTests/EFCircularSliderTests-Info.plist";
+				INFOPLIST_FILE = "EFCircularSliderTests/SLLCircularSliderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -509,7 +509,7 @@
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "EFCircularSlider/EFCircularSlider-Prefix.pch";
-				INFOPLIST_FILE = "EFCircularSliderTests/EFCircularSliderTests-Info.plist";
+				INFOPLIST_FILE = "EFCircularSliderTests/SLLCircularSliderTests-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
 				WRAPPER_EXTENSION = xctest;
@@ -519,7 +519,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		73AA2221184F85BF0019641B /* Build configuration list for PBXProject "EFCircularSlider" */ = {
+		73AA2221184F85BF0019641B /* Build configuration list for PBXProject "SLLCircularSlider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73AA2256184F85BF0019641B /* Debug */,
@@ -528,7 +528,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73AA2258184F85BF0019641B /* Build configuration list for PBXNativeTarget "EFCircularSlider" */ = {
+		73AA2258184F85BF0019641B /* Build configuration list for PBXNativeTarget "SLLCircularSlider" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73AA2259184F85BF0019641B /* Debug */,
@@ -537,7 +537,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		73AA225B184F85BF0019641B /* Build configuration list for PBXNativeTarget "EFCircularSliderTests" */ = {
+		73AA225B184F85BF0019641B /* Build configuration list for PBXNativeTarget "SLLCircularSliderTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				73AA225C184F85BF0019641B /* Debug */,

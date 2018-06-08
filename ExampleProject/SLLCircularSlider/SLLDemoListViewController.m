@@ -1,18 +1,20 @@
 //
-//  EFDemoListViewController.m
-//  EFCircularSlider
+//  SLLDemoListViewController.m
+//  SLLCircularSlider
 //
+//  This is based on the SLLCircularSlider from Eliot Fowler
+//  https://github.com/eliotfowler/SLLCircularSlider
 //  Created by Eliot Fowler on 12/5/13.
 //  Copyright (c) 2013 Eliot Fowler. All rights reserved.
 //
 
-#import "EFDemoListViewController.h"
+#import "SLLDemoListViewController.h"
 
-@interface EFDemoListViewController ()
+@interface SLLDemoListViewController ()
 
 @end
 
-@implementation EFDemoListViewController
+@implementation SLLDemoListViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

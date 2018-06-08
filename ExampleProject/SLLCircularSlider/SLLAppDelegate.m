@@ -1,14 +1,14 @@
 //
-//  EFAppDelegate.m
-//  EFCircularSlider
+//  SLLAppDelegate.m
+//  SLLCircularSlider
 //
 //  Created by Eliot Fowler on 12/4/13.
 //  Copyright (c) 2013 Eliot Fowler. All rights reserved.
 //
 
-#import "EFAppDelegate.h"
+#import "SLLAppDelegate.h"
 
-@implementation EFAppDelegate
+@implementation SLLAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

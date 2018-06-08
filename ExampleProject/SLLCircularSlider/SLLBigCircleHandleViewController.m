@@ -1,19 +1,21 @@
 //
-//  EFDoubleCircleViewController.m
-//  EFCircularSlider
+//  SLLBigCircleHandleViewController.m
+//  SLLCircularSlider
 //
+//  This is based on the SLLCircularSlider from Eliot Fowler
+//  https://github.com/eliotfowler/SLLCircularSlider
 //  Created by Eliot Fowler on 12/5/13.
 //  Copyright (c) 2013 Eliot Fowler. All rights reserved.
 //
 
-#import "EFDoubleCircleViewController.h"
-#import "EFCircularSlider.h"
+#import "SLLBigCircleHandleViewController.h"
+#import "SLLCircularSlider.h"
 
-@interface EFDoubleCircleViewController ()
+@interface SLLBigCircleHandleViewController ()
 
 @end
 
-@implementation EFDoubleCircleViewController
+@implementation SLLBigCircleHandleViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -27,10 +29,11 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    
+	
     CGRect sliderFrame = CGRectMake(60, 150, 200, 200);
-    EFCircularSlider* circularSlider = [[EFCircularSlider alloc] initWithFrame:sliderFrame];
-    circularSlider.handleType = EFDoubleCircleWithOpenCenter;
+    SLLCircularSlider* circularSlider = [[SLLCircularSlider alloc] initWithFrame:sliderFrame];
+    circularSlider.handleType = SLLBigCircle;
+    circularSlider.handleColor = [UIColor blueColor];
     [self.view addSubview:circularSlider];
 }
 

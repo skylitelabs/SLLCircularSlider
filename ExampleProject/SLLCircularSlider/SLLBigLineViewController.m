@@ -1,26 +1,28 @@
 //
-//  EFBigLineViewController.m
-//  EFCircularSlider
+//  SLLBigLineViewController.m
+//  SLLCircularSlider
 //
+//  This is based on the SLLCircularSlider from Eliot Fowler
+//  https://github.com/eliotfowler/SLLCircularSlider
 //  Created by Christian Bianciotto on 21/03/14.
 //  Copyright (c) 2014 Eliot Fowler. All rights reserved.
 //
 
-#import "EFBigLineViewController.h"
-#import "EFCircularSlider.h"
+#import "SLLBigLineViewController.h"
+#import "SLLCircularSlider.h"
 
-@interface EFBigLineViewController ()
+@interface SLLBigLineViewController ()
 
 @end
 
-@implementation EFBigLineViewController
+@implementation SLLBigLineViewController
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
     
     CGRect sliderFrame = CGRectMake(0, 120, 320, 320);
-    EFCircularSlider* circularSlider = [[EFCircularSlider alloc] initWithFrame:sliderFrame];
+    SLLCircularSlider* circularSlider = [[SLLCircularSlider alloc] initWithFrame:sliderFrame];
     
     circularSlider.lineWidth = 50;
     circularSlider.labelFont = [UIFont fontWithName:@"GillSans-Light" size:16];

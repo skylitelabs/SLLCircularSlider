@@ -1,12 +1,14 @@
 //
-//  EFCircularSlider.m
+//  SLLCircularSlider.m
 //  Awake
 //
+//  This is based on the SLLCircularSlider from Eliot Fowler
+//  https://github.com/eliotfowler/SLLCircularSlider
 //  Created by Eliot Fowler on 12/3/13.
 //  Copyright (c) 2013 Eliot Fowler. All rights reserved.
 //
 
-#import "EFCircularSlider.h"
+#import "SLLCircularSlider.h"
 #import <QuartzCore/QuartzCore.h>
 #import <CoreImage/CoreImage.h>
 
@@ -15,13 +17,13 @@
 #define ToDeg(rad)		( (180.0 * (rad)) / M_PI )
 #define SQR(x)			( (x) * (x) )
 
-@interface EFCircularSlider (private)
+@interface SLLCircularSlider (private)
 
 @property (readonly, nonatomic) CGFloat radius;
 
 @end
 
-@implementation EFCircularSlider {
+@implementation SLLCircularSlider {
     int angle;
     int fixedAngle;
     NSMutableDictionary* labelsWithPercents;
@@ -40,7 +42,8 @@
     _handleColor = _filledColor;
     _labelFont = [UIFont systemFontOfSize:10.0f];
     _snapToLabels = NO;
-    _handleType = EFSemiTransparentWhiteCircle;
+    _handleSize = -1;
+    _handleType = SLLSemiTransparentWhiteCircle;
     _labelColor = [UIColor redColor];
     _labelDisplacement = 2;
     
@@ -77,14 +80,20 @@
 
 - (CGFloat)radius {
     //radius = self.frame.size.height/2 - [self circleDiameter]/2;
-    return self.frame.size.height/2 - _lineWidth/2 - ([self circleDiameter]-_lineWidth) - _lineRadiusDisplacement;
+    return self.frame.size.height / 2 -
+           _lineWidth/2 -
+           ([self circleDiameter] - _lineWidth) -
+           _lineRadiusDisplacement;
 }
 
 - (void)setCurrentValue:(float)currentValue {
-    _currentValue=currentValue;
+    _currentValue = currentValue;
     
-    if(_currentValue>_maximumValue) _currentValue=_maximumValue;
-    else if(_currentValue<_minimumValue) _currentValue=_minimumValue;
+    if (_currentValue > _maximumValue) {
+        _currentValue = _maximumValue;
+    } else if (_currentValue < _minimumValue) {
+        _currentValue = _minimumValue;
+    }
     
     angle = [self angleFromValue];
     [self setNeedsLayout];
@@ -94,14 +103,19 @@
 
 #pragma mark - drawing methods
 
-- (void)drawRect:(CGRect)rect
-{
+- (void)drawRect:(CGRect)rect {
     [super drawRect:rect];
     
     CGContextRef ctx = UIGraphicsGetCurrentContext();
     
     //Draw the unfilled circle
-    CGContextAddArc(ctx, self.frame.size.width/2, self.frame.size.height/2, self.radius, 0, M_PI *2, 0);
+    CGContextAddArc(ctx,
+                    self.frame.size.width / 2,
+                    self.frame.size.height / 2,
+                    self.radius,
+                    0,
+                    M_PI * 2,
+                    0);
     [_unfilledColor setStroke];
     CGContextSetLineWidth(ctx, _lineWidth);
     CGContextSetLineCap(ctx, kCGLineCapButt);
@@ -109,10 +123,23 @@
     
     
     //Draw the filled circle
-    if((_handleType == EFDoubleCircleWithClosedCenter || _handleType == EFDoubleCircleWithOpenCenter) && fixedAngle > 5) {
-        CGContextAddArc(ctx, self.frame.size.width/2  , self.frame.size.height/2, self.radius, 3*M_PI/2, 3*M_PI/2-ToRad(angle+3), 0);
+    if ((_handleType == SLLDoubleCircleWithClosedCenter || _handleType == SLLDoubleCircleWithOpenCenter) &&
+        fixedAngle > 5) {
+        CGContextAddArc(ctx,
+                        self.frame.size.width / 2,
+                        self.frame.size.height / 2,
+                        self.radius,
+                        3 * M_PI / 2,
+                        3 * M_PI / 2 - ToRad(angle + 3),
+                        0);
     } else {
-        CGContextAddArc(ctx, self.frame.size.width/2  , self.frame.size.height/2, self.radius, 3*M_PI/2, 3*M_PI/2-ToRad(angle), 0);
+        CGContextAddArc(ctx,
+                        self.frame.size.width / 2,
+                        self.frame.size.height / 2,
+                        self.radius,
+                        3 * M_PI / 2,
+                        3 * M_PI / 2 - ToRad(angle),
+                        0);
     }
     [_filledColor setStroke];
     CGContextSetLineWidth(ctx, _lineWidth);
@@ -120,7 +147,7 @@
     CGContextDrawPath(ctx, kCGPathStroke);
     
     //Add the labels (if necessary)
-    if(labelsEvenSpacing != nil) {
+    if(labelsEvenSpacing) {
         [self drawLabels:ctx];
     }
     
@@ -128,16 +155,20 @@
     [self drawHandle:ctx];
 }
 
--(void) drawHandle:(CGContextRef)ctx{
+-(void) drawHandle:(CGContextRef)ctx {
     CGContextSaveGState(ctx);
     CGPoint handleCenter =  [self pointFromAngle: angle];
-    if(_handleType == EFSemiTransparentWhiteCircle) {
+    if (_handleType == SLLSemiTransparentWhiteCircle) {
         [[UIColor colorWithWhite:1.0 alpha:0.7] set];
-        CGContextFillEllipseInRect(ctx, CGRectMake(handleCenter.x, handleCenter.y, _lineWidth, _lineWidth));
-    } else if(_handleType == EFSemiTransparentBlackCircle) {
+        CGContextFillEllipseInRect(ctx,
+                                   CGRectMake(handleCenter.x,
+                                              handleCenter.y,
+                                              _lineWidth,
+                                              _lineWidth));
+    } else if (_handleType == SLLSemiTransparentBlackCircle) {
         [[UIColor colorWithWhite:0.0 alpha:0.7] set];
         CGContextFillEllipseInRect(ctx, CGRectMake(handleCenter.x, handleCenter.y, _lineWidth, _lineWidth));
-    } else if(_handleType == EFDoubleCircleWithClosedCenter) {
+    } else if(_handleType == SLLDoubleCircleWithClosedCenter) {
         [_handleColor set];
         CGContextAddArc(ctx, handleCenter.x + (_lineWidth)/2, handleCenter.y + (_lineWidth)/2, _lineWidth, 0, M_PI *2, 0);
         CGContextSetLineWidth(ctx, 7);
@@ -145,7 +176,7 @@
         CGContextDrawPath(ctx, kCGPathStroke);
         
         CGContextFillEllipseInRect(ctx, CGRectMake(handleCenter.x, handleCenter.y, _lineWidth-1, _lineWidth-1));
-    } else if(_handleType == EFDoubleCircleWithOpenCenter) {
+    } else if(_handleType == SLLDoubleCircleWithOpenCenter) {
         [_handleColor set];
         CGContextAddArc(ctx, handleCenter.x + (_lineWidth)/2, handleCenter.y + (_lineWidth)/2, _lineWidth/2 + 5, 0, M_PI *2, 0);
         CGContextSetLineWidth(ctx, 4);
@@ -156,7 +187,7 @@
         CGContextSetLineWidth(ctx, 2);
         CGContextSetLineCap(ctx, kCGLineCapButt);
         CGContextDrawPath(ctx, kCGPathStroke);
-    } else if(_handleType == EFBigCircle) {
+    } else if(_handleType == SLLBigCircle) {
         [_handleColor set];
         CGContextFillEllipseInRect(ctx, CGRectMake(handleCenter.x-2.5, handleCenter.y-2.5, _lineWidth+5, _lineWidth+5));
     }
@@ -293,15 +324,15 @@
 }
 
 - (CGFloat)circleDiameter {
-    if(_handleType == EFSemiTransparentWhiteCircle) {
+    if(_handleType == SLLSemiTransparentWhiteCircle) {
         return _lineWidth;
-    } else if(_handleType == EFSemiTransparentBlackCircle) {
+    } else if(_handleType == SLLSemiTransparentBlackCircle) {
         return _lineWidth;
-    } else if(_handleType == EFDoubleCircleWithClosedCenter) {
+    } else if(_handleType == SLLDoubleCircleWithClosedCenter) {
         return _lineWidth * 2 + 3.5;
-    } else if(_handleType == EFDoubleCircleWithOpenCenter) {
+    } else if(_handleType == SLLDoubleCircleWithOpenCenter) {
         return _lineWidth + 2.5 + 2;
-    } else if(_handleType == EFBigCircle) {
+    } else if(_handleType == SLLBigCircle) {
         return _lineWidth + 2.5;
     }
     return 0;
@@ -324,13 +355,15 @@ static inline float AngleFromNorth(CGPoint p1, CGPoint p2, BOOL flipped) {
         _currentValue = 270 - angle + 90;
     }
     fixedAngle = _currentValue;
-    return (_currentValue*(_maximumValue - _minimumValue))/360.0f;
+    return ((_currentValue * (_maximumValue - _minimumValue)) / 360.0f) + _minimumValue;
 }
 
 - (float)angleFromValue {
-    angle = 360 - (360.0f*_currentValue/_maximumValue);
+    angle = 360 - (360.0f * _currentValue / _maximumValue);
     
-    if(angle==360) angle=0;
+    if (angle == 360) {
+        angle=0;
+    }
     
     return angle;
 }

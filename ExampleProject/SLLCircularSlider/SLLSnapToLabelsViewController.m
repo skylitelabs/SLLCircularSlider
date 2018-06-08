@@ -1,19 +1,21 @@
 //
-//  EFBigCircleHandleViewController.m
-//  EFCircularSlider
+//  SLLSnapToLabelsViewController.m
+//  SLLCircularSlider
 //
+//  This is based on the SLLCircularSlider from Eliot Fowler
+//  https://github.com/eliotfowler/SLLCircularSlider
 //  Created by Eliot Fowler on 12/5/13.
 //  Copyright (c) 2013 Eliot Fowler. All rights reserved.
 //
 
-#import "EFBigCircleHandleViewController.h"
-#import "EFCircularSlider.h"
+#import "SLLSnapToLabelsViewController.h"
+#import "SLLCircularSlider.h"
 
-@interface EFBigCircleHandleViewController ()
+@interface SLLSnapToLabelsViewController ()
 
 @end
 
-@implementation EFBigCircleHandleViewController
+@implementation SLLSnapToLabelsViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -29,9 +31,12 @@
     [super viewDidLoad];
 	
     CGRect sliderFrame = CGRectMake(60, 150, 200, 200);
-    EFCircularSlider* circularSlider = [[EFCircularSlider alloc] initWithFrame:sliderFrame];
-    circularSlider.handleType = EFBigCircle;
-    circularSlider.handleColor = [UIColor blueColor];
+    SLLCircularSlider* circularSlider = [[SLLCircularSlider alloc] initWithFrame:sliderFrame];
+    
+    NSArray* labels = @[@"B", @"C", @"D", @"E", @"A"];
+    [circularSlider setInnerMarkingLabels:labels];
+    circularSlider.snapToLabels = YES;
+    
     [self.view addSubview:circularSlider];
 }
 

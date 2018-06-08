@@ -1,18 +1,20 @@
 //
-//  EFCircularSliderTests.m
-//  EFCircularSliderTests
+//  SLLCircularSliderTests.m
+//  SLLCircularSliderTests
 //
+//  Based on SLLCircularSlider for Eliot Fowler
+//  https://github.com/eliotfowler/SLLCircularSlider
 //  Created by Eliot Fowler on 12/4/13.
 //  Copyright (c) 2013 Eliot Fowler. All rights reserved.
 //
 
 #import <XCTest/XCTest.h>
 
-@interface EFCircularSliderTests : XCTestCase
+@interface SLLCircularSliderTests : XCTestCase
 
 @end
 
-@implementation EFCircularSliderTests
+@implementation SLLCircularSliderTests
 
 - (void)setUp
 {
