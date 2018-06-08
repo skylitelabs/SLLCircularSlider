@@ -1,4 +1,4 @@
-EFCircularSlider
+SLLCircularSlider
 ================
 
 An extensible circular slider for iOS applications.
@@ -15,28 +15,28 @@ The code to make this GIF is in the `ExampleProject/` directory:
 Installation
 ------------
 
-The simplest way to use EFCircularSlider in your application is with [CocoaPods](http://cocoapods.org). See the ["Getting Started" guide for more information](http://guides.cocoapods.org/using/using-cocoapods.html).
+The simplest way to use SLLCircularSlider in your application is with [CocoaPods](http://cocoapods.org). See the ["Getting Started" guide for more information](http://guides.cocoapods.org/using/using-cocoapods.html).
 
 #### Podfile
 
 ```ruby
-platform :ios, '7.0'
-pod "EFCircularSlider", "~> 0.1.0"
+platform :ios, '8.0'
+pod "SLLCircularSlider"
 ```
 
-You could instead clone the project and copy the EFCircularSlider/EFCircularSlider.{h,m} files into your project.
+You could instead clone the project and copy the SLLCircularSlider/SLLCircularSlider.{h,m} files into your project.
 
 
 Initialization
 --------------
 
-Adding EFCircularSlider to your project is as simple as getting the source files, and waving a magic wand:
+Adding SLLCircularSlider to your project is as simple as getting the source files, and waving a magic wand:
 
 ``` objc
 - (void)viewDidLoad {
 	...
 	CGRect sliderFrame = CGRectMake(110, 150, 100, 100);
-    EFCircularSlider* circularSlider = [[EFCircularSlider alloc] initWithFrame:sliderFrame];
+    SLLCircularSlider* circularSlider = [[SLLCircularSlider alloc] initWithFrame:sliderFrame];
     [self.view addSubview:circularSlider];
     ...
 }
@@ -51,7 +51,7 @@ And then, just like you would for any other control, you need to subscribe to th
 Options
 -------
 
-EFCircularSlider is made to be very easy to style and customize.
+SLLCircularSlider is made to be very easy to style and customize.
 
 ###Properties
 
@@ -67,7 +67,7 @@ circularSlider.minimumValue = 1.0f;
 
 ####maximumValue:(float) - Default 100.0f
 
-With EFCircularSlider, the currentValue increases as you drag the slider clockwise. Therefore, when 
+With SLLCircularSlider, the currentValue increases as you drag the slider clockwise. Therefore, when 
 the slider is just to the left of the very top position, it will approach (but never reach) this. 
 
 You can set the maximum value with:
@@ -110,20 +110,20 @@ CGFloat brightness = ( arc4random() % 128 / 256.0 ) + 0.5;
 circularSlider.handleColor = [UIColor colorWithHue:hue saturation:saturation brightness:brightness alpha:1];
 ```
 
-####handleType:(EFHandleType) - Default EFSemiTransparentWhiteCircle
+####handleType:(EFHandleType) - Default SLLSemiTransparentWhiteCircle
 
-EFCircularSlider comes with 4 types of handles:
+SLLCircularSlider comes with 4 types of handles:
 
-- EFSemiTransparentWhiteCircle
-- EFSemiTransparentBlackCircle
-- EFDoubleCircleWithOpenCenter
-- EFDoubleCircleWithClosedCenter
-- EFBigCircle
+- SLLSemiTransparentWhiteCircle
+- SLLSemiTransparentBlackCircle
+- SLLDoubleCircleWithOpenCenter
+- SLLDoubleCircleWithClosedCenter
+- SLLBigCircle
 
 You can change the handleType with:
 
 ```objc
-circularSlider.handleType = EFDoubleCircleWithClosedCenter;
+circularSlider.handleType = SLLDoubleCircleWithClosedCenter;
 ```
 
 ####unfilledColor:(UIColor*) - Default [UIColor blackColor]
@@ -195,13 +195,15 @@ More information about Michael Sambora can be found at his [personal website](ht
 About the developer
 -------------------
 
-If you like this control, [follow @EliotFowler](http://www.twitter.com/eliotfowler) on Twitter and let me know!
+If you like this control, [follow @leejayschmidt](http://www.twitter.com/leejayschmidt) on Twitter and let me know!
 
 
 License (MIT)
 -------------
 
-Copyright (c) 2013 Eliot Fowler
+Copyright (c) 2018 Leejay Schmidt at Skylite Labs
+Built from the EFCircularSlider, originally created (c) 2013, Eliot Fowler
+[original codebase](https://github.com/eliotfowler/EFCircularSlider)
 
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the "Software"), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 
