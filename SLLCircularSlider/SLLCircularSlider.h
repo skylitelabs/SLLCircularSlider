@@ -43,6 +43,6 @@ typedef NS_ENUM(NSInteger, SLLHandleType) {
  * Sets the text visible on the inner side of the circular view controller with evenly-spaced string
  * @param labels The array of strings that will be displayed on the inner labels
  **/
--(void)setInnerMarkingLabels:(NSArray*)labels;
+-(void)setInnerMarkingLabels:(NSArray<NSString *> *)labels;
 
 @end
